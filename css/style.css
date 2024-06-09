@@ -723,13 +723,15 @@ footer form button.btn:hover{
     background-color: var(--main-color);
     border-color: var(--main-color);
 }
-footer .links span{
+footer .links span,
+footer .links a{
     color: #000;
     font-size: 14px;
     cursor: pointer;
     margin-bottom: 7px;
 }
-footer .links span:hover{
+footer .links span:hover,
+footer .links a:hover{
     color: var(--main-color);
     font-weight: 700;
 }
@@ -751,6 +753,34 @@ footer .copy-right p{
     margin: auto;
     padding: 15px 0;
     text-align: center;
+}
+footer .social a i{
+    font-size: 20px;
+}
+footer .social a div{
+    border-radius: 50%;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .social a .face-icon{
+    background-color: #3b5a9a;
+    color: #fff;
+}
+footer .social a .twitter-icon{
+    background-color: #1aa9e1;
+    color: #fff;
+}
+footer .social a .linked-icon{
+    background-color: #0073b2;
+    color: #fff;
+}
+footer .social a .youtube-icon{
+    color: #fff;
+    background-color: #b80504;
 }
 footer form input, footer form .btn, footer .icon-download img{
     height: 35px;
@@ -910,6 +940,14 @@ footer form .btn{
     .datamatix-section p {
         font-size: 18px;
         width: 100%;
+    }
+}
+@media only screen and (max-width: 1155px) {
+    header .right-part .nav2 {
+        text-align: center;
+    }
+    header .right-part .nav2 a {
+        margin-right: 0;
     }
 }
 @media only screen and (max-width: 991px) {
@@ -1112,6 +1150,9 @@ footer form .btn{
     }
 }
 @media only screen and (max-width: 575px) {
+    header .right-part .nav2{
+        text-align: left;
+    }
     .nav2, .nav3{
         padding: 20px 0;
     }
