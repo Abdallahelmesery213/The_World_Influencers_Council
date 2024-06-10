@@ -123,8 +123,8 @@ header .right-part .nav2 a{
 header .right-part .nav3{
     background-color: #fff;
     min-height: 50px;
-    display: none;
-    /* display: flex; */
+    /* display: none; */
+    display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 20px;
@@ -949,10 +949,12 @@ footer form .btn{
     }
 }
 @media only screen and (max-width: 1155px) {
-    header .right-part .nav2 {
+    header .right-part .nav2,
+    header .right-part .nav3 {
         text-align: center;
     }
-    header .right-part .nav2 a {
+    header .right-part .nav2 a ,
+    header .right-part .nav3 a {
         margin-right: 0;
     }
 }
@@ -1163,7 +1165,8 @@ footer form .btn{
     }
 }
 @media only screen and (max-width: 575px) {
-    header .right-part .nav2{
+    header .right-part .nav2,
+    header .right-part .nav3{
         text-align: left;
     }
     .nav2, .nav3{
